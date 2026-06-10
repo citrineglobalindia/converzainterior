@@ -17,7 +17,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { useToast } from '@/hooks/use-toast';
 import { Navigate, useNavigate } from 'react-router-dom';
 
-type AppRole = 'admin' | 'manager' | 'user' | 'client' | 'bd_marketing' | 'digital_marketer' | 'graphic_designer';
+type AppRole = 'admin' | 'manager' | 'user' | 'client' | 'bd_marketing' | 'digital_marketer' | 'graphic_designer' | 'sales';
 
 const ROLES: { value: AppRole; label: string; description: string }[] = [
   { value: 'admin', label: 'Admin', description: 'Full access to all features and settings' },
@@ -27,6 +27,7 @@ const ROLES: { value: AppRole; label: string; description: string }[] = [
   { value: 'bd_marketing', label: 'BD/Marketing', description: 'Business development and marketing team' },
   { value: 'digital_marketer', label: 'Digital Marketer', description: 'Assign and manage graphic design tasks' },
   { value: 'graphic_designer', label: 'Graphic Designer', description: 'Complete assigned design tasks' },
+  { value: 'sales', label: 'Sales', description: 'Sales team member' },
 ];
 
 export default function CreateUser() {

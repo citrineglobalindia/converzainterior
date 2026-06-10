@@ -1018,6 +1018,7 @@ export type Database = {
         | "bd_marketing"
         | "digital_marketer"
         | "graphic_designer"
+        | "sales"
       lead_status:
         | "new_lead"
         | "contacted"
@@ -1173,6 +1174,7 @@ export const Constants = {
         "bd_marketing",
         "digital_marketer",
         "graphic_designer",
+        "sales",
       ],
       lead_status: [
         "new_lead",
