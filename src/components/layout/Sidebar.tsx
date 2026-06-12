@@ -23,6 +23,7 @@ import {
   Megaphone,
   Palette,
   BarChart3,
+  Contact,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -89,6 +90,7 @@ export default function Sidebar({ collapsed, onToggle, isMobile }: SidebarProps)
   const adminNav: NavItemType[] = [
     { to: '/admin/users', icon: Users, label: 'User Management' },
     { to: '/admin/create-user', icon: UserPlus, label: 'Create User' },
+    { to: '/sales', icon: Contact, label: 'Sales' },
   ];
 
   const reportsNav: NavItemType[] = [
